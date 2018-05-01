@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ET44_DatosPersistencia.Pagina2"
+             Title="Página Lectura">
+    
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Clave: " />
+            <Entry x:Name="nombreClave"/>
+            <Label Text="Texto recuperado: "/>
+            <Entry x:Name="textoClave" />
+            <Button x:Name="botonLeer" Text="Leer Clave" />
+
+            <Label Text="Nombre del centro de mensajes: "/>
+            <Entry x:Name="nombreCentroMensaje" />
+            <Label Text="Texto a enviar: "/>
+            <Entry x:Name="datosMensaje" Text="" Placeholder="Escribe aquí lo que quieres enviar" />
+            <Button x:Name="botonEnviarMensaje" Text="Enviar Mensaje"/>
+            
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

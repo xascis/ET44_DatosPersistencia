@@ -13,7 +13,7 @@ namespace ET44_DatosPersistencia
 		{
 			InitializeComponent();
 
-			MainPage = new ET44_DatosPersistencia.MainPage();
+			MainPage = new NavigationPage(new ET44_DatosPersistencia.MainPage());
 		}
 
 		protected override void OnStart ()

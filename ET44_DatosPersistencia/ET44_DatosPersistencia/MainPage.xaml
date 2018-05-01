@@ -2,10 +2,25 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ET44_DatosPersistencia"
-             x:Class="ET44_DatosPersistencia.MainPage">
+             x:Class="ET44_DatosPersistencia.MainPage"
+             Title="Página Escritura">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Clave: " />
+            <Entry x:Name="nombreClave"/>
+            <Label Text="Texto a guardar: "/>
+            <Entry x:Name="textoClave" />
+            <Button x:Name="botonGuardar" Text="Guardar Clave" />
+
+            <Label Text="Nombre de suscripción: "/>
+            <Entry x:Name="nombreCentroMensaje" />
+            <Button x:Name="botonSuscribirse" Text="Suscribirse"/>
+            <Label x:Name="datosMensaje" Text="Aquí aparecerá el texto enviado"/>
+
+            <Button x:Name="botonPagina2" Text="Ir a la página 2" />
+        </StackLayout>
+    </ScrollView>
+    
 
 </ContentPage>
